@@ -43,6 +43,7 @@
     nav .header-right{
         display: initial;
         z-index: 400;
+        color:black;
     }
     .navbar-keys{
         display: none;
