@@ -1,0 +1,382 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --font:'nunito'
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#whatsapp{
+    width: 80px;
+    height: 80px;
+    padding: 12px;
+    position: fixed;
+    right: 2%;
+    top: 70%;
+    z-index: 222;
+    border-radius: 40px;
+    background-color: #569b12;
+    box-shadow: 0px 0px 15px black;
+}
+#whatsapp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.hero{
+    width: 100%;
+    height: 100%;
+}
+/* header */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20vw;
+    background-image: linear-gradient(to right, #833768 , #E75EA3);
+}
+header h2{
+   color: white;
+   font: 300 0.9vmax var(--font); 
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+.header-right a{
+    color: white;
+    display: flex;
+    align-items: center;
+    font: 300 0.9vmax var(--font);
+    text-decoration: none;
+    margin-right: 15px;
+}
+.header-contact{
+    display: flex;
+    align-items: center;
+}
+/* navbar */
+nav{
+    width: 100%;
+    height: 8vmin;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 17vw;
+    background-color: brown;
+}
+nav .header-right{
+    display: none;
+}
+nav img{
+    height: 100%;
+}
+nav a{
+    color:black;
+    font: 300 0.9vmax var(--font);
+    text-decoration: none;
+    margin-right: 10px;
+}
+#select{
+    display: none;
+}
+.slideshow{
+    height: 80%;
+    width: 100%;
+    background-color: #E75EA3;
+  
+}
+
+@keyframes slide {
+    0% {transform: translate(0);}
+    /* 20% {transform: translateX(0);} */
+    /* 21% {transform: translateX(-100vw);} */
+    /* 40% {transform: translateX(-100vw);} */
+    /* 41% {transform: translateX(-200vw);} */
+    /* 60% {transform: translateX(-200vw);} */
+    /* 61% {transform: translateX(-300vw);} */
+    /* 80% {transform: translateX(-300vw);} */
+    /* 81% {transform: translateX(-400vw);} */
+    100% {transform: translateX(-400vw);}
+  }
+.slideshow-container{
+    width: fit-content;
+    display: flex;
+    height: 100%;
+    animation: slide 15s steps(4, end) infinite;
+    
+}
+.slideshow-container img{
+    width:100vw;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-bottom{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 14vw;
+    /* background-color: antiquewhite; */
+}
+.hero-bottom h3{
+    color: black;
+    font: 500 1vmax var(--font);
+    
+}
+.text-slide{
+    width: 60%;
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+
+@keyframes anime {
+    from {transform: translate(0);}
+    to {transform: translateX(-100%);}
+  }
+.text-container{
+    width: fit-content;
+    animation: anime 15s linear infinite;
+}
+.text-container p{
+    font: 300 0.8vmax var(--font);
+    width: 200%;
+    color:  #E75EA3;
+}
+.section-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4% 18vw;
+}
+.section-1 h2{
+    font: 700 2vmax var(--font);
+    text-align: center;
+    margin: 20px 0;
+}
+.section-1 p{
+    font: 300 1vmax var(--font);
+    text-align: center;
+    margin: 10px 0;
+}
+/* section-1 */
+.section-2{
+    width: 100%;
+    height: 75%;
+    position: relative;
+/* padding: 3% 10vw; */
+background-image: url('https://www.nifafinearts.com/images/appbg.jpg');
+background-attachment:fixed;
+background-color: rgba(0, 0, 0, 0.271);
+}
+.section-2-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+background-color: rgba(0, 0, 0, 0.773);
+}
+.section-2-left{
+    width: 30%;
+    padding: 2%;
+    color: white;
+}
+.section-2 iframe{
+    width: 30%;
+}
+
+.section-2 h2{
+    text-align: left;
+    font: 800 1.7vmax var(--font);
+    margin: 30px 0;
+}
+
+.section-2 p{
+    text-align: left;
+    font: 100 1vmax var(--font);
+    margin-bottom: 20px;
+}
+
+/* section-2 */
+
+.section-3{
+    width: 100%;
+    background-image: url('https://www.nifafinearts.com/images/artboard2.png');
+    padding: 30px 18vw;
+}
+.section-3div{
+    width: 100%;
+    columns: 4;
+    gap: 10px;
+}
+
+.section-3 h2{
+    text-align:center;
+    margin: 20px ;
+    font: 700 2vmax var(--font);
+}
+.course-card{
+    width: 100%;
+    height: 20vmax;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #eaeaea;
+    transition: 0.25s all ease-in-out;
+}
+.course-card:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.394);
+    transform: translateY(-4%);
+}
+.course-card img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+.course-card-bottom{
+    height: 50%;
+    width: 100%;
+    padding: 1% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.course-card h4{
+    height: 50%;
+    width: 100%;
+    font: 600 1vmax var(--font);
+    text-align: center;
+}
+
+/* section-3 */
+.section-4{
+    width: 100%;
+    padding: 30px 18vw;
+    
+}
+.section-4 h2{
+    text-align:center;
+    margin: 20px ;
+    font: 700 2vmax var(--font);
+    
+}
+.section-4-div{
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.section-4-div img{
+    height: 100%;
+    max-height: 40vmin;
+    margin: 10px;
+    border-radius: 10px;
+}
+/* section-4 */
+
+
+.section-5{
+    width: 100%;
+    height: 80%;
+    background-image: url('https://www.nifafinearts.com/images/student-talk.jpg');
+    background-attachment:fixed;
+    padding: 30px 18vw;
+    
+}
+.section-5 h2{
+    color: white;
+    text-align:center;
+    margin: 20px ;
+    font: 700 2vmax var(--font);
+}
+.section-5div{
+    width: 100%;
+    height: 80%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-5div-top{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.section-5div iframe{
+    width: 30%;
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+    margin: 1%;
+}
+
+footer{
+    width: 100%;
+    height: 60%;
+    padding: 30px 18vw;
+    background-image: url('https://www.nifafinearts.com/images/fotbg2.jpeg');
+    background-size: cover;
+}
+.footer-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.footer-top li{
+    list-style: none;
+    font: 400 1vmax var(--font);
+    cursor: pointer;
+}
+
+.footer-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.footer-bleft h4{
+    font: 400 1.2vmax var(--font);
+}
+.footer-bleft p{
+    font: 300 1vmax var(--font);
+}
+
+button{
+    color: white;
+    font: 300 1vmax var(--font);
+    background-image: linear-gradient(to right, #ad4374 , #5d52bb);
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 10px 20px;
+   
+}
+
